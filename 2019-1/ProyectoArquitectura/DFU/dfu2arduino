@@ -1,0 +1,5 @@
+pushd /Users/juanis/Desktop/ProyectoArquitectura/hiduino-master/compiled_firmwares/
+
+dfu-programmer atmega16u2 flash --suppress-bootloader-mem usbserial_uno_16u2.hex
+
+popd

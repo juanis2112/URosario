@@ -1,0 +1,8 @@
+// insertion operator overload, declare as friend of simple_vector
+ostream & operator<<(ostream &os, const simple_vector &rhs) {
+    os << "(  ";
+    for (int i = 0; i < rhs.length; i++) cout << rhs.array[i] << "  ";
+    os << "), len = " << rhs.length << ", cap = " << rhs.capacity;
+    
+    return os;
+}

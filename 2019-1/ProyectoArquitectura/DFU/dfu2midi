@@ -1,0 +1,6 @@
+pushd /Users/juanis/Desktop/ProyectoArquitectura/hiduino-master/compiled_firmwares/
+
+dfu-programmer atmega16u2 flash --force arduino_midi.hex
+
+echo "Done"
+popd
